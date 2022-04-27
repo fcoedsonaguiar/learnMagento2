@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Learn\MyApi\Api\LearnMyApiInterface" type="Learn\MyApi\Model\Hello"/>
+    <preference for="Learn\MyApi\Api\Data\UserInterface" type="Learn\MyApi\Model\Data\User"/>
+</config>

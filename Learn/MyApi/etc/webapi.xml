@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route method="GET" url="/V1/admin/hello/:name">
+        <service class="Learn\MyApi\Api\LearnMyApiInterface" method="hello"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route method="GET" url="/V1/learn/hello/:name">
+        <service class="Learn\MyApi\Api\LearnMyApiInterface" method="hello"/>
+        <resources>
+            <resource ref="Learn_MyApi::rest_api" />
+        </resources>
+    </route>
+    <route method="GET" url="/V1/customer/hello/:name">
+        <service class="Learn\MyApi\Api\LearnMyApiInterface" method="hello"/>
+        <resources>
+            <resource ref="self" />
+        </resources>
+    </route>
+
+    <route method="GET" url="/V1/learn/customer">
+        <service class="Learn\MyApi\Api\LearnMyApiInterface" method="getUser"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+</routes>
