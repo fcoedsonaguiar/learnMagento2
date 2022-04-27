@@ -1,20 +1,25 @@
 {
-  "name": "learn/myapi",
-  "version": "1.0.0",
-  "description": "N/A",
-  "type": "magento2-module",
-  "require": {
-    "magento/framework": "*"
-  },
-  "license": [
-    "Proprietary"
-  ],
-  "autoload": {
-    "files": [
-      "registration.php"
+    "name": "learn/myapi",
+    "description": "Magento 2 Developer Test Task",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Edson Aguiar",
+            "role": "Dev Magento 2",
+            "email": "fcoedsonaguiar@gmail.com"
+        }
     ],
-    "psr-4": {
-      "Learn\\MyApi\\": ""
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Learn\\MyApi\\": ""
+        }
+    },
+    "require": {
+        "php": ">=7.0.14",
+        "magento/magento-composer-intaller": "*"
     }
-  }
 }
